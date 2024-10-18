@@ -47,45 +47,26 @@ const AdminDashboard = ({ orders, onDeleteOrder, onEditOrder, onCreateOrder }) =
       <h2>Order Dashboard</h2>
       <form onSubmit={editingOrderId ? handleUpdateOrder : handleCreateOrder}>
         <div className="form-group">
-          <input
-            type="text"
-            name="name"
-            placeholder="Name"
-            value={orderDetails.name}
-            onChange={handleChange}
-            required
-          />
+          <input type="text" name="name" placeholder="Name" value={orderDetails.name} onChange={handleChange} required />
         </div>
         <div className="form-group">
-          <input
-            type="text"
-            name="address"
-            placeholder="Address"
-            value={orderDetails.address}
-            onChange={handleChange}
-            required
-          />
+          <input type="text" name="address" placeholder="Address" value={orderDetails.address} onChange={handleChange} required />
         </div>
         <div className="form-group">
-          <input
-            type="date"
-            name="date"
-            value={orderDetails.date}
-            onChange={handleChange}
-            required
-          />
+          <input type="date" name="date" value={orderDetails.date} onChange={handleChange} required />
         </div>
-        <button type="submit">{editingOrderId ? 'Update Order' : 'Create Order'}</button>
+        <button id='submit' type="submit">{editingOrderId ? 'Update Order' : 'Create Order'}</button>
       </form>
-
+      
       <h3>Order List</h3>
+
       <ul className="order-list">
         {orders.map((order) => (
           <li key={order.id} className="order-item">
             <div className="order-details">
-              <p>Name: {order.name} </p>
-              <p>Address: {order.address} </p>
-              <p>Date: {order.date} </p>
+              <p><span id='info'>Name:</span> {order.name} </p>
+              <p><span id='info'>Address:</span> {order.address} </p>
+              <p><span id='info'>Date:</span> {order.date} </p>
             </div>
             <div className="order-actions">
               <button className="edit-button" onClick={() => handleEditOrder(order)}>Edit</button>

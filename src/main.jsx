@@ -1,7 +1,8 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import App from './App.jsx';
-import './index.css';
+import './styles/reset.css'
+import './styles/index.css';
 import { ThemeProvider, createTheme } from '@mui/material/styles'; // Import necessary Material-UI components
 
 // Create a Material-UI theme

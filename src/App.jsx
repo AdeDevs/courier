@@ -29,7 +29,7 @@ const App = () => {
   };
   
   return (
-    <div>
+    <div className='parent-container'>
       <h1>Online Courier Service</h1>
       <AdminDashboard 
         orders={orders} 

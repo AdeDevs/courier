@@ -1,0 +1,16 @@
+:root {
+    background-color: #00d5ff;
+}
+
+.parent-container {
+    background-color: #00d5ff;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.parent-container h1 {
+    font-size: 30px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
