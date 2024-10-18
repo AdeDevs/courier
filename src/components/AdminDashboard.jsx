@@ -58,7 +58,7 @@ const AdminDashboard = ({ orders, onDeleteOrder, onEditOrder, onCreateOrder }) =
         <button id='submit' type="submit">{editingOrderId ? 'Update Order' : 'Create Order'}</button>
       </form>
       
-      <h3>Order List</h3>
+      <h3>List Of Orders</h3>
 
       <ul className="order-list">
         {orders.map((order) => (
